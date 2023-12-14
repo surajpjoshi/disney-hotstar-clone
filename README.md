@@ -1,25 +1,7 @@
-# Disney Hotstar UI Clone
+![image](https://github.com/surajpjoshi/disney-hotstar-clone/assets/47292337/8c629546-0529-4d9c-9f22-14388142cea0)
 
-Hotstar-Disney+ UI clone using ReactJS
 
-Most Simple Project you can do when ypu start studying ReactJS.It is only made using ReactJS.
+docker run -d -p 3000:3000 hotstar-clone
 
-## Installation
-
-need to install git and npm in system
-
-```
-git clone https://github.com/anandhu720/disney-hotstar-clone.git
-
-cd disney-hotstar-clone
-
-npm i
-
-npm start
-
-```
-
-## Website link
-
-https://hotstar-88d5e.web.app
+http://your-instance-ip:3000
 
