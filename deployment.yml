@@ -1,0 +1,35 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: hotstar-clone
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hotstar-clone
+  template:
+    metadata:
+      name: hotstar-clone
+      labels:
+        app: hotstar-clone
+    spec:
+      containers:
+      - name: hotstar-clone
+        image: surajpjoshi/hotstar-clone
+        ports:
+          - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hotstar-clone
+spec:
+  type: NodePort
+  selector:
+    app: hotstar-clone
+  ports:
+    - port: 80
+      targetPort: 3000
+      nodePort: 30785
+...
