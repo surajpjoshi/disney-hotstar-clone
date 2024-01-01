@@ -3,8 +3,8 @@
 
 
 
-docker run -d -p 3000:3000 hotstar-clone
 
-http://your-instance-ip:3000
+
+
 
 Detail Blog : https://surajjoshi.hashnode.dev/deploying-disney-hot-star-clone-with-kubernetes
